@@ -103,6 +103,10 @@ $colors: (
   color: red !important;
 }
 
+.bg-red{
+  background-color: red !important;
+}
+
 button{
   box-shadow: none !important;
 }
@@ -153,4 +157,21 @@ hr{
   right: -9999px;
   bottom: -9999px;
   margin: auto;
+}
+
+.title-page{
+  background: #1F57A7;
+  text-align: center;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.title-page h4{
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.range-md.range-has-pin{
+  padding-top: 0 !important;
 }

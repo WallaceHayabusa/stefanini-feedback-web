@@ -1,44 +1,44 @@
-<ion-header>
-        <ion-navbar>
-            <ion-title>
-                PDI
-            </ion-title>
-        </ion-navbar>
-    </ion-header>
+<ion-content padding>
+    <ion-row>
+        <ion-col col-12 class="text-center">
+            <img src="../../assets/images/logo-horizontal.png" class="w-50" alt="">
+        </ion-col>
+    </ion-row>
+    <hr>
+    <div class="spacer" style="height: 1%;"></div>
+    <ion-row offset-6 class="d-inline-box" align-items-center>
+        <label for="" class="nome">NOME DE TESTE</label><br>
+        <label for="" class="ocupacao">Lorem Lorem</label>
+        <div offset-1 class="img-perfil">
+            <img src="../../assets/images/user.jpg" />
+        </div>
+    </ion-row>
+    <div class="spacer" style="height: 1%;"></div>
 
-    <ion-content>
-        <ion-img src="../../assets/images/feed.png"></ion-img>
-        <hr>
-        <h1 id="titulo-pdi">PDI</h1>
-        
-        <ion-list>
-            <div style="border-left-style: solid; border-color: #afc023; border-width: 8px;">
-                <ion-item>
-                    <ion-label>Meta1: Lorem ipsum</ion-label>
-                    <ion-range min="0" max="10" pin="true"></ion-range>
-                </ion-item>
-            </div>
-            
-            <div style="border-left-style: solid; border-color: #c02323; border-width: 8px; margin-top: 10px">
-                <ion-item>
-                    <ion-label>Meta2: Lor ipsum</ion-label>
-                    <ion-range min="0" max="10" pin="true"></ion-range>
-                </ion-item>
-            </div>
-            
-            <div style="border-left-style: solid; border-color: #0a4f9c; border-width: 8px; margin-top: 10px">
-                <ion-item>
-                    <ion-label>Meta3: Lorem ipsum lore</ion-label>
-                    <ion-range min="0" max="10" pin="true"></ion-range>
-                </ion-item>
-            </div>
-            
-            <div style="border-left-style: solid; border-color: #c02323; border-width: 8px; margin-top: 10px">
-                <ion-item>
-                    <ion-label>Meta4: Lorem ipsum ipsum lorem</ion-label>
-                    <ion-range min="0" max="10" pin="true"></ion-range>
-                </ion-item>
-            </div>
+    <div class="title-page bg-red">
+        <h4>pdi</h4>
+    </div>
 
-        </ion-list>
-    </ion-content>
+    <ion-list>
+        <ion-item class="range-item">
+            <ion-label>Meta1: Lorem ipsum</ion-label>
+            <ion-range min="0" max="10" pin="true"></ion-range>
+        </ion-item>
+
+        <ion-item class="range-item border-red">
+            <ion-label>Meta2: Lor ipsum</ion-label>
+            <ion-range min="0" max="10" pin="true"></ion-range>
+        </ion-item>
+
+        <ion-item class="range-item border-blue">
+            <ion-label>Meta3: Lorem ipsum lore</ion-label>
+            <ion-range min="0" max="10" pin="true"></ion-range>
+        </ion-item>
+
+        <ion-item class="range-item border-red">
+            <ion-label>Meta4: Lorem ipsum ipsum lorem</ion-label>
+            <ion-range min="0" max="10" pin="true"></ion-range>
+        </ion-item>
+
+    </ion-list>
+</ion-content>
