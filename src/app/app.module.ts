@@ -11,6 +11,7 @@ import { ProdutividadePage } from './../pages/produtividade/produtividade';
 import { SatisfacaoPage } from './../pages/satisfacao/satisfacao';
 import { AvaliacaoPage } from './../pages/avaliacao/avaliacao';
 import { PdiPage } from './../pages/pdi/pdi';
+import { AvaliacaoConsolidarPage } from './../pages/avaliacao-consolidar/avaliacao-consolidar';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { PdiPage } from './../pages/pdi/pdi';
     ProdutividadePage,
     SatisfacaoPage,
     AvaliacaoPage,
+    AvaliacaoConsolidarPage,
     PdiPage
   ],
   imports: [
@@ -34,6 +36,7 @@ import { PdiPage } from './../pages/pdi/pdi';
     ProdutividadePage,
     SatisfacaoPage,
     AvaliacaoPage,
+    AvaliacaoConsolidarPage,
     PdiPage
   ],
   providers: [
