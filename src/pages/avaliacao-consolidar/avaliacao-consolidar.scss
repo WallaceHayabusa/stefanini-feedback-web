@@ -9,3 +9,33 @@
     border-width: 1px; 
     height: 40px;
 }
+
+.row-questao{
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.bg-black{
+    background-color: black !important;
+}
+
+.bg-yellow{
+    background-color: #ffc000 !important;
+}
+
+ion-range{
+    padding-top: 0 !important;
+}
+
+.range-consolidar{
+    height: 40px;
+    margin-bottom: 5px;
+    margin-top: -20px;
+}
+
+.range-consolidar ion-col{
+    margin: 0;
+    padding: 0;
+}

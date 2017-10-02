@@ -1,103 +1,115 @@
-<ion-content>
-    <ion-img src="../../assets/images/feed.png"></ion-img>
+<ion-content padding>
+    <ion-row>
+        <ion-col col-12 class="text-center">
+            <img src="../../assets/images/logo-horizontal.png" class="w-50" alt="">
+        </ion-col>
+    </ion-row>
     <hr>
-    <h1 id="titulo-avaliacao">Avaliação</h1>
+    <div class="spacer" style="height: 1%;"></div>
+    <ion-row offset-5 col-10 class="d-inline-box" align-items-center>
+        <label for="" class="nome">NOME DE TESTE</label><br>
+        <label for="" class="ocupacao">Lorem Lorem</label>
+        <div offset-1 class="img-perfil">
+            <img src="../../assets/images/user.jpg" />
+        </div>
+    </ion-row>
+    <div class="spacer" style="height: 1%;"></div>
+
+    <div class="title-page bg-green">
+        <h4>avalição</h4>
+    </div>
 
     <ion-row>
-        <ion-col col-sm-12 style="height: 30px;"></ion-col>
-
-        <ion-col col-sm-12 style="height: 30px;"></ion-col>
-
-        <ion-col col-sm-12 style="height: 30px;"></ion-col>
-
-        <ion-col col-sm-12 style="height: 30px;">
+        <ion-col col-9 class="text-right">
             <label>Pessoal</label>
         </ion-col>
-
-        <ion-col col-sm-12 style="height: 30px;">
+        <ion-col col-3 class="text-center">
             <label>Gestor</label>
         </ion-col>
     </ion-row>
 
-    <ion-row>
-        <ion-col col-sm-12 style="height: 50px; background-color: black; color: white">
-            <label>Questão 1a</label> 
-        </ion-col>
-        
-        <ion-col col-sm-12 style="height: 50px; background-color: black; color: white"></ion-col>
-
-        <ion-col col-sm-12 style="height: 50px; background-color: black; color: white"></ion-col>
-
-        <ion-col col-sm-12 style="height: 50px; background-color: black; color: white">
-            <label>9</label> 
+    <ion-row class="row-questao" (click)="height1 = height1 ? 0 : r1.scrollHeight" 
+                        [ngClass]="{'bg-yellow' : height1 > 0}">
+        <ion-col col-7>
+            <label>Questão 1a</label>
         </ion-col>
 
-        <ion-col col-sm-12 style="height: 50px; background-color: black; color: white">
-            <label>9</label> 
+        <ion-col col-3>
+            <label>9</label>
         </ion-col>
 
+        <ion-col col-2>
+            <label>9</label>
+        </ion-col>
+    </ion-row>
+    <ion-row class="bg-gray range-consolidar" [style.height]="height1 + 'px'" #r1>
+        <ion-col col-12 [style.opacity]="height1">
+            <ion-range min="0" max="10" pin="true"></ion-range>
+        </ion-col>
     </ion-row>
     
-    <ion-row style="margin-top: 15px">
-        <ion-col col-sm-12 style="height: 50px; background-color: #ffc000; color: white">
-            <label>Questão 1b</label> 
+    <ion-row class="row-questao mt-20" (click)="height2 = height2 ? 0 : r2.scrollHeight"
+                            [ngClass]="{'bg-yellow' : height2 > 0}">
+        <ion-col col-7>
+            <label>Questão 1b</label>
         </ion-col>
 
-        <ion-col col-sm-12 style="height: 50px; background-color: #ffc000; color: white"></ion-col>
-
-        <ion-col col-sm-12 style="height: 50px; background-color: #ffc000; color: white"></ion-col>
-
-        <ion-col col-sm-12 style="height: 50px; background-color: #ffc000; color: white">
-            <label>9</label> 
+        <ion-col col-3>
+            <label>9</label>
         </ion-col>
 
-        <ion-col col-sm-12 style="height: 50px; background-color: #ffc000; color: white">
-            <label>7</label> 
+        <ion-col col-2>
+            <label>9</label>
         </ion-col>
     </ion-row>
-
-    <ion-row style="margin-top: 15px">
-        <ion-col col-sm-12 style="height: 50px; background-color: black; color: white">
-            <label>Questão 2a</label> 
+    <ion-row class="bg-gray range-consolidar" [style.height]="height2 + 'px'" #r2>
+        <ion-col col-12 [style.opacity]="height2">
+            <ion-range min="0" max="10" pin="true"></ion-range>
         </ion-col>
-        
-        <ion-col col-sm-12 style="height: 50px; background-color: black; color: white"></ion-col>
-
-        <ion-col col-sm-12 style="height: 50px; background-color: black; color: white"></ion-col>
-
-        <ion-col col-sm-12 style="height: 50px; background-color: black; color: white">
-            <label>6</label> 
-        </ion-col>
-
-        <ion-col col-sm-12 style="height: 50px; background-color: black; color: white">
-            <label>6</label> 
-        </ion-col>
-
     </ion-row>
-
-    <ion-row style="margin-top: 15px">
-        <ion-col col-sm-12 style="height: 50px; background-color: black; color: white">
-            <label>Questão 2b</label> 
-        </ion-col>
-        
-        <ion-col col-sm-12 style="height: 50px; background-color: black; color: white"></ion-col>
-
-        <ion-col col-sm-12 style="height: 50px; background-color: black; color: white"></ion-col>
-
-        <ion-col col-sm-12 style="height: 50px; background-color: black; color: white">
-            <label>8</label> 
-        </ion-col>
-
-        <ion-col col-sm-12 style="height: 50px; background-color: black; color: white">
-            <label>8</label> 
-        </ion-col>
     
+    <ion-row class="row-questao mt-20" (click)="height3 = height3 ? 0 : r3.scrollHeight"
+                            [ngClass]="{'bg-yellow' : height3 > 0}">
+        <ion-col col-7>
+            <label>Questão 2a</label>
+        </ion-col>
+
+        <ion-col col-3>
+            <label>9</label>
+        </ion-col>
+
+        <ion-col col-2>
+            <label>9</label>
+        </ion-col>
+    </ion-row>
+    <ion-row class="bg-gray range-consolidar" [style.height]="height3 + 'px'" #r3>
+        <ion-col col-12 [style.opacity]="height3">
+            <ion-range min="0" max="10" pin="true"></ion-range>
+        </ion-col>
+    </ion-row>
+   
+    <ion-row class="row-questao mt-20" (click)="height4 = height4 ? 0 : r3.scrollHeight"
+                        [ngClass]="{'bg-yellow' : height4 > 0}">
+        <ion-col col-7>
+            <label>Questão 2b</label>
+        </ion-col>
+
+        <ion-col col-3>
+            <label>9</label>
+        </ion-col>
+
+        <ion-col col-2>
+            <label>9</label>
+        </ion-col>
+    </ion-row>
+    <ion-row class="bg-gray range-consolidar" [style.height]="height4 + 'px'" #r3>
+        <ion-col col-12 [style.opacity]="height4">
+            <ion-range min="0" max="10" pin="true"></ion-range>
+        </ion-col>
     </ion-row>
 
-    <div padding>
-        <button id="botao-consolidar" block (click)="goToConsolidarAvaliacao()">
-            <span style="font-size: 28px">CONSOLIDAR</span>
-        </button>
-    </div>
-
+        
 </ion-content>
+<ion-footer>
+    <button ion-button block class="bt-black">CONSOLIDAR</button>
+</ion-footer>

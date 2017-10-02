@@ -107,6 +107,10 @@ $colors: (
   text-align: left !important;
 }
 
+.text-right{
+  text-align: right !important;
+}
+
 .text-justify{
   text-align: justify !important;
 }
@@ -119,8 +123,16 @@ $colors: (
   background-color: #A4C140 !important;
 }
 
+.bg-gray{
+  background-color: gray !important;
+}
+
 button{
   box-shadow: none !important;
+}
+
+.mt-20{
+  margin-top: 20px !important;
 }
 
 .w-50{
@@ -186,4 +198,10 @@ hr{
 
 .range-md.range-has-pin{
   padding-top: 0 !important;
+}
+
+.bt-black{
+  background: transparent !important;
+  border: thin solid black !important;
+  color: black !important;
 }
