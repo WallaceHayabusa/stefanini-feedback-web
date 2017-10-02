@@ -4,5 +4,27 @@
 }
 
 .item-label {
-    color: #0a4f9c;
+    color: #1F57A7;
+}
+
+.title-page{
+    background: #1F57A7;
+    text-align: center;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.title-page h4{
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.row-collapse{
+    background: lightgray;
+    padding: 0 !important;
+}
+
+.conteudo-collapse{
+    opacity: 0;
 }

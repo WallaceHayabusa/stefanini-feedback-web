@@ -1,32 +1,107 @@
-<ion-header>
-    <ion-navbar>
-        <ion-title>
-            Satisfação do Cliente
-        </ion-title>
-    </ion-navbar>
-</ion-header>
 
-<ion-content>
-    <ion-img src="../../assets/images/feed.png"></ion-img>
+<ion-content padding>
+    <ion-row>
+        <ion-col col-12 class="text-center">
+            <img src="../../assets/images/logo-horizontal.png" class="w-50" alt="">
+        </ion-col>
+    </ion-row>
     <hr>
-    <h1 id="titulo-satisfacao">Satisfação do Cliente</h1>
+    <div class="spacer" style="height: 1%;"></div>
+    <ion-row offset-6 class="d-inline-box" align-items-center>
+        <label for="" class="nome">NOME DE TESTE</label><br>
+        <label for="" class="ocupacao">Lorem Lorem</label>
+        <div offset-1 class="img-perfil">
+            <img src="../../assets/images/user.jpg" />
+        </div>
+    </ion-row>
+    <div class="spacer" style="height: 1%;"></div>
+
+    <div class="title-page"><h4>Satisfação do Cliente</h4></div>
 
     <ion-list>
-        <ion-item>
-            <ion-img src="../../assets/images/bb.png"></ion-img>
-            <span class="item-label">Banco do Brasil</span> 
-            <span style="color: #afc023">80%</span>
+        <ion-item (click)="heightBB = heightBB ? 0 : bb.scrollHeight">
+            <ion-thumbnail item-start>
+                <img src="../../assets/images/bb.png">
+            </ion-thumbnail>
+            <h2 class="text-blue">Banco do Brasil</h2>
+            <span clear item-end class="text-green">80%</span>
         </ion-item>
-
-        <ion-item>
-            <ion-img src="../../assets/images/pf.png"></ion-img>
-            <span class="item-label">Polícia Federal</span> 
-            <span style="color: #c02323">60%</span>
-        </ion-item>
+        <ion-row class="row-collapse" col-12 [style.height]="heightBB + 'px'" #bb>
+            <ion-col col-9>
+                lorem lorem lorem lorem
+            </ion-col>
+            <ion-col col-1>
+                ---
+            </ion-col>
+            <ion-col col-2 class="text-center">
+                70%
+            </ion-col>
+            <ion-col col-9>
+                lorem lorem lorem lorem
+            </ion-col>
+            <ion-col col-1>
+                ---
+            </ion-col>
+            <ion-col col-2 class="text-center">
+                70%
+            </ion-col>
+        </ion-row>
         
-        <ion-item>
-            <ion-img src="../../assets/images/correios.png"></ion-img>
-            <span class="item-label">Correios</span> <span class="item-label">70%</span>
+        <ion-item (click)="heightPF = heightPF ? 0 : bb.scrollHeight">
+            <ion-thumbnail item-start>
+                <img src="../../assets/images/pf.png">
+            </ion-thumbnail>
+            <h2 class="text-blue">Polícia Federal</h2>
+            <span clear item-end class="text-red">60%</span>
         </ion-item>
+        <ion-row class="row-collapse" col-12 [style.height]="heightPF + 'px'" #pf>
+                <ion-col col-9>
+                    lorem lorem lorem lorem
+                </ion-col>
+                <ion-col col-1>
+                    ---
+                </ion-col>
+                <ion-col col-2 class="text-center">
+                    70%
+                </ion-col>
+                <ion-col col-9>
+                    lorem lorem lorem lorem
+                </ion-col>
+                <ion-col col-1>
+                    ---
+                </ion-col>
+                <ion-col col-2 class="text-center">
+                    70%
+                </ion-col>
+            </ion-row>
+
+        <ion-item (click)="correios(cc.scrollHeight)">
+            <ion-thumbnail item-start>
+                <img src="../../assets/images/correios.png">
+            </ion-thumbnail>
+            <h2 class="text-blue">Correios</h2>
+            <span clear item-end class="text-blue">70%</span>
+        </ion-item>
+        <ion-row class="row-collapse" col-12 [style.height]="heightCC + 'px'" #cc>
+                <ion-col col-9 [style.opacity]="heightCC">
+                    lorem lorem lorem lorem
+                </ion-col>
+                <ion-col col-1 [style.opacity]="heightCC">
+                    ---
+                </ion-col>
+                <ion-col col-2 class="text-center" [style.opacity]="heightCC">
+                    70%
+                </ion-col>
+                <ion-col col-9 [style.opacity]="heightCC">
+                    lorem lorem lorem lorem
+                </ion-col>
+                <ion-col col-1 [style.opacity]="heightCC">
+                    ---
+                </ion-col>
+                <ion-col col-2 class="text-center" [style.opacity]="heightCC">
+                    70%
+                </ion-col>
+        </ion-row>
+
     </ion-list>
 </ion-content>
