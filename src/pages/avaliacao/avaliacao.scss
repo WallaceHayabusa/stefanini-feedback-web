@@ -9,3 +9,27 @@
     border-width: 1px; 
     height: 40px;
 }
+ion-slide p,
+ion-toolbar{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+ion-slide ion-range{
+    padding-top: 0 !important;
+}
+
+ion-slide button{
+    background: transparent !important;
+    border: thin solid black !important;
+    color: black !important;
+}
+
+.swiper-slide{
+    align-items: baseline !important;
+}
+
+.border-left{
+    border-left: 5px solid #A4C140;
+}
+
