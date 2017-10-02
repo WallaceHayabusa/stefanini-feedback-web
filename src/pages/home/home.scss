@@ -1,29 +1,49 @@
 #produtividade_avaliacao {
     background-color: #afc023;
     color: white;
-    padding: 25px; 
+    padding: 10px; 
     margin: 1px;
+    border: 3px solid white;
 }
 
 #satisfacao {
     background-color: #0a4f9c;
     color: white;
-    padding: 25px; 
+    padding: 10px; 
     margin: 1px;
+    border: 3px solid white;
 }
 #pdi {
     background-color: #c02323;
     color: white;
-    padding: 25px; 
+    padding: 10px; 
     margin: 1px;
+    border: 3px solid white;
 }
 
 .porcentagem {
-    font-weight: bold;
-    font-size: 36px;
-    margin-left: 8px;
+    font-size: 60px;
+}
+
+.title{
+    text-transform: uppercase;
 }
 
 button {
     background-color: white;
+}
+
+ion-col{
+    width: 50% !important;
+}
+
+.nome{
+    color: #1F57A7 !important;
+    text-transform: uppercase;
+}
+
+.ocupacao{
+    float: right;
+    color: gray;
+    text-transform: capitalize;
 }
