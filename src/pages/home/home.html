@@ -1,14 +1,30 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <ion-img src="../../assets/images/feed.png"></ion-img>
+    <hr>
+    <ion-grid>
+        <ion-row>
+            <ion-col col-md-6 id="produtividade_avaliacao" (click)="goToProdutividade()">
+                <label>Produtividade</label> 
+                <label class="porcentagem">90%</label>
+            </ion-col>
+
+            <ion-col col-md-6 id="satisfacao" (click)="goToSatisfacao()">
+                <label>Satisfação do Cliente</label>
+                <label class="porcentagem">70%</label>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col col-md-6 id="produtividade_avaliacao" (click)="goToAvaliacao()">
+                <label>Avaliação</label> 
+                <label class="porcentagem">85%</label>
+            </ion-col>
+
+            <ion-col col-md-6 id="pdi" (click)="goToPdi()">
+                <label>PDI</label> 
+                <label class="porcentagem">60%</label>
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
 </ion-content>
