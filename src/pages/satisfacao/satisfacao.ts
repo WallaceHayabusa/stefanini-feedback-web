@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
 
 @Component({
     selector: 'page-satisfacao',
@@ -9,8 +10,13 @@ export class SatisfacaoPage {
     heightPF = 0;
     heightCC = 0;
     isCC: boolean;
-    constructor(){
 
+    constructor(private nav: NavController) {
+
+    }
+
+    back() {
+        this.nav.pop();
     }
 
     correios(heightScroll: number){

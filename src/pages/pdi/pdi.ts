@@ -1,3 +1,4 @@
+import { NavController } from 'ionic-angular';
 import { Component } from '@angular/core';
 
 @Component({
@@ -5,5 +6,13 @@ import { Component } from '@angular/core';
     templateUrl: './pdi.html'
 })
 export class PdiPage {
+
+    constructor(private nav: NavController){
+
+    }
+
+    back(){
+        this.nav.pop();
+    }
 
 }

@@ -16,4 +16,8 @@ export class AvaliacaoPage {
     goToConsolidarAvaliacao() {
         this.navCtrl.push(AvaliacaoConsolidarPage);
     }
+
+    back() {
+        this.navCtrl.pop();
+    }
 }
